@@ -1,6 +1,7 @@
 body {
     background-color: bisque;
-    font-family:Helvetica;
+    font-family: Helvetica;
+    font-weight: bold;
 }
 
 h2 {
@@ -10,6 +11,7 @@ h2 {
 .navbar {
     overflow: hidden;
     background-color:cadetblue;
+    border: 3px outset;
 }
 
 .navbar a {
