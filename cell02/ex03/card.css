@@ -1,17 +1,89 @@
 header {
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
+    margin: 20px;
 }
 
 body {
-    background-color: bisque;
+    background-color:mediumpurple;
 }
 
 table {
+    margin: auto;
+    text-align: center;
     border: ridge;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 red;
+    box-shadow: 0 4px 8px 0 blueviolet;
+    max-width: 300px;
+    background-color: aliceblue;
 }
 
 table:hover {
-    box-shadow: 0 8px 16px 0 blue;
+    box-shadow: 0 8px 16px 0 purple;
+}
+
+.profile {
+    width: 100%;
+}
+
+.icon {
+    box-shadow: 0 4px 8px 0 cornflowerblue;
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.icon:hover {
+    background-color: cornflowerblue;
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container td {
+    margin: auto;
+}
+
+h1 h2 h3 {
+    text-align: center;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: dimgray;
+}
+
+h2 {
+    color: midnightblue;
+}
+
+h3 {
+    color: midnightblue;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: green;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+    opacity: 0.7;
 }

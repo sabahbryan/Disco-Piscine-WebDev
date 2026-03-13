@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+
+    <body>
+        <input type="text" id="firstnum" name="firstnum"><br><br>
+        <select id="operator" name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select><br><br>
+        <input type="text" id="secondnum" name="secondnum"><br><br>
+        <input type="submit" value="Try me!">
+        <script src="./calc.js">
+            console.log();
+        </script>
+    </body>
+
+<!--
+* inputs must only be positive integers (>= 0), otherwise "Error :(" 
+* division/modulus by zero will cause "It's over 9000!" alert
+* all results must be console.log
+* 30 seconds pop-up "Please, use me"
+-->

@@ -1,0 +1,113 @@
+/* PARALLAX */
+
+body, html {
+    height: 100vh;
+}
+
+.text {
+    
+    font-family: Impact;
+    font-size: 40px;
+    color: white;
+}
+
+.parallax {
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one {
+    background-image: url(https://wallpapercave.com/wp/wp8351444.png);
+}
+
+.two {
+    background-image: url(https://wallpapercave.com/wp/wp5493583.jpg);
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    border: 4px outset skyblue;
+}
+
+h1 {
+    font-family: Impact;
+    font-weight: bold;
+    color: white;
+}
+
+/* NAVBAR */
+
+/* need to be invisible or transparent */
+.navbar {
+    overflow: hidden;
+    background-color:cadetblue;
+    border: 3px outset;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:brown;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropHome {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color:brown;
+    padding: 14px 16px;
+    background-color: inherit; 
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropHome {
+    background-color: white;
+}
+
+.homeContent {
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    min-width: 160px;
+    box-shadow: 0px 10px 20px 0px;
+    z-index: 1;
+}
+
+.homeContent a {   
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.homeContent a:hover {
+    background-color: cornflowerblue;
+}
+
+.dropdown:hover .homeContent {
+    display: block;
+}
