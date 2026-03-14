@@ -1,0 +1,58 @@
+body, html {
+	height: 100%;
+	margin: auto;
+	font-family: "arial";
+}
+.parallax {
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block {
+        background-color: transparent;
+	opacity: 0.5;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.profile-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+.profile-card {
+	background-color: #64696C;
+	width: 300px;
+	border-radius: 10px;
+	justify-content: center;
+	text-align: center;
+}
+.profile-card img{
+	border-radius: 50%
+}
+.social-links {
+	display: flex;
+	justify-content: center;
+}
+.social-links img {
+	height: 25px;
+	width: 25px;
+}
+.resume {
+	height: 25px;
+	align-items: center;
+	text-decoration: none;
+}
+.img1 {
+	background-image: url('https://preview.redd.it/los-santos-wallpaper-v0-g9kwygybv3751.jpg?width=1080&crop=smart&auto=webp&s=5c6447deb074329078d9f4f121447bf27752e232')
+}
+.img2 {
+	background-image: url('https://wallpapers-clan.com/wp-content/uploads/2025/07/vice-city-retro-evening-skyline-desktop-wallpaper-preview.jpg')
+}

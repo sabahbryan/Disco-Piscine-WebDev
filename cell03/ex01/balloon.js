@@ -5,9 +5,43 @@
 
 const circleBalloon = document.querySelector("div");
 
+let size = 200;
+
 const colors = ["red", "green", "blue"];
 let colorIndex = 0;
 
+circleBalloon.addEventListener('click', function()
+{
+    size += 10;
+
+    if  (size > 420)
+        size = 200;
+
+    circleBalloon.style.width = size + "px";
+    circleBalloon.style.height = size + "px";
+
+    colorIndex = (colorIndex + 1) % colors.length;
+    circleBalloon.style.backgroundColor = colors[colorIndex];
+});
+
+circleBalloon.addEventListener('mouseleave', function()
+{
+    size -= 5;
+
+    if  (size < 200)
+        size = 200;
+
+    circleBalloon.style.width = size + "px";
+    circleBalloon.style.height = size + "px";
+
+    colorIndex--;
+    if (colorIndex < 0)
+        colorIndex = 2;
+    circleBalloon.style.backgroundColor = colors[colorIndex];
+});
+
+
+/*
 function clickIncrease() {
 
     let x1 = circleBalloon.offsetWidth;
@@ -22,8 +56,6 @@ function clickIncrease() {
     circleBalloon.style.backgroundColor = colors[colorIndex];
     colorIndex = (colorIndex + 1) % colors.length;
 }
-
-circleBalloon.addEventListener('click', clickIncrease);
 
 function hoverDecrease() {
 
@@ -41,7 +73,6 @@ function hoverDecrease() {
 }
 
 circleBalloon.addEventListener('mouseleave', hoverDecrease);
-
 function explodeBalloon() {
     //if (circleBalloon.style.width  >= 420)
     let x2 = 200;
@@ -50,6 +81,7 @@ function explodeBalloon() {
     circleBalloon.style.width = x2 + "px";
     circleBalloon.style.height = y2 + "px";
 }
+*/
 
 /*
 if click (x < 420)

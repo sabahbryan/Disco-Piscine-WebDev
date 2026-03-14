@@ -13,6 +13,7 @@ body {
     height: 200px;
     transition-duration: 0.4s;
 }
+
 /*
 .balloon:hover {
     transform: scale(0.9)
