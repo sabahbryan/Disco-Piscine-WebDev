@@ -9,19 +9,19 @@
     </head>
 
     <body>
-        <input type="text" id="firstnum" name="firstnum"><br><br>
-        <select id="operator" name="operator">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-            <option value="%">%</option>
-        </select><br><br>
-        <input type="text" id="secondnum" name="secondnum"><br><br>
-        <input type="submit" value="Try me!">
-        <script src="./calc.js">
-            console.log();
-        </script>
+        <form id="calcform">
+            <input type="text" id="firstnum" name="firstnum" placeholder="First No."><br><br>
+            <select id="operator" name="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select><br><br>
+            <input type="text" id="secondnum" name="secondnum" placeholder="Second No."><br><br>
+            <input type="submit" value="Try me!">
+        </form>
+        <script src="./calc.js"></script>
     </body>
 
 <!--
@@ -30,3 +30,5 @@
 * all results must be console.log
 * 30 seconds pop-up "Please, use me"
 -->
+
+<!--  -->
