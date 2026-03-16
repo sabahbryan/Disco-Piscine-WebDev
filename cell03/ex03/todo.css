@@ -2,7 +2,30 @@ body {
     background-color: bisque;
 
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+}
+
+#newButton {
+    background-color: aquamarine;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#ft_list {
+    width: 300px;
+    margin: auto;
+}
+
+.todo {
+    background-color: cornflowerblue;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.todo:hover {
+    background-color: crimson;
 }

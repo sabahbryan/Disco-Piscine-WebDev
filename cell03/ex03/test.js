@@ -32,6 +32,16 @@ function loadTodos()
     }
 }
 
+newBtn.addEventListener("click", function()
+{
+    let text = prompt("Enter a new TO DO:");
+
+    if (text && text.trim() !== "")
+    {
+        createTodo(text);
+    }
+});
+
 function createTodo(text, save = true)
 {
     const todo = document.createElement("div");
@@ -53,14 +63,6 @@ function createTodo(text, save = true)
         saveTodos();
 }
 
-newBtn.addEventListener("click", function()
-{
-    let text = prompt("Enter a new TO DO:");
 
-    if (text && text.trim() !== "")
-    {
-        createTodo(text);
-    }
-});
 
 loadTodos();
